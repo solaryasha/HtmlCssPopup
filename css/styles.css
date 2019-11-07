@@ -10,8 +10,6 @@ body {
 .navigation {
     display: block;
     height: auto;
-    /* height: 100%; */
-    /* border: 1px solid red; */
 }
 
 .nav_menu {
@@ -25,11 +23,9 @@ body {
     align-items: center;
     list-style-type: none;
     margin-left: 20px;
-    /* border: 1px solid blue; */
 }
 .menu_card a {
     text-decoration: none;
-    /* padding: 10px; */
     color: black;
 }
 .menu_card img {
@@ -47,7 +43,6 @@ body {
     height: 480px;
     top: 70px;
     right: 50px;
-
     background: #fff;
     border: 1px solid #ccc;
     border-color: rgba(0,0,0,.2);
@@ -63,8 +58,6 @@ body {
     justify-content: center;
     padding-left: 0px;
     list-style-type: none;
-    /* border: 1px solid yellow; */
-
 }
 .popupItem,
 .hidden {
@@ -74,10 +67,7 @@ body {
     width: 80px;
     height: 80px;
     margin-top: 20px;
-    
     padding: 5px 5px 0 5px;
-
-    /* border: 1px solid blue; */
 }
 .popupItem a {
     text-decoration: none;
@@ -112,8 +102,7 @@ body {
 .menu-btn,
 .moreApps {
     position: absolute;
-    -webkit-appearance: none;
-    appearance: none;
+    clip: rect(0 0 0 0);
 }
 .menu-btn:checked ~ .iconsBox {
     display: block;
@@ -127,12 +116,12 @@ body {
     width: 298px;
     text-align: center;
     background-color:#f5f5f5;
-    margin-top: 43px;
+    margin-top: 41px;
     line-height: 35px;
 }
 .dividingLine {
     color: #eee;
-    width: 260px;
+    width: 250px;
     margin-left: 20px;
     opacity: 0.5;
 }
@@ -150,10 +139,54 @@ body {
     display: flex;
 }
 .popupItem a:hover {
-    outline: 1px solid mistyrose;
+    outline: 1px solid gray;
+}
+.menu_card:hover,
+.evenMore:hover {
+    text-decoration: underline;
+}
+.bell:hover,
+.avatar:hover {
+    opacity: 0.7;
+}
+.menu_card:focus,
+.popupItem img:focus {
+    outline: 3px solid blue;
 }
 
-.menu_card a:focus,
-.popupItem img:focus {
-    outline: 3px solid mistyrose;
+.menu-btn:focus + .menu-icon {
+    outline: 3px solid blue;
+}
+
+.moreApps:focus + .menuMoreButton{
+    border: 1px solid blue;
+}
+
+.searchContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 150px auto;
+    max-width: 500px;
+    height: 90vh;
+    align-items: center;
+}
+.logo {
+    width: 400px;
+    height: auto;
+    margin-left: -50px;
+}
+.searchBox {
+    border: 1px solid #dfe1e5;
+    border-radius: 20px;
+    box-shadow: 0 1px 3px 0 rgba(32, 33, 36, .28);
+    height: 40px;
+    width: 100%;
+    cursor: text;
+    font-size: 16px;
+    padding-left: 30px;
+    
+}
+.searchBox:focus {
+    outline: none;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
 }
