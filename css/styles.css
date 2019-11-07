@@ -149,17 +149,18 @@ body {
 .avatar:hover {
     opacity: 0.7;
 }
-.menu_card:focus,
+
+.menu_card a:focus,
 .popupItem img:focus {
-    outline: 3px solid blue;
+    outline: 2px solid rgb(94, 158, 214);
 }
 
 .menu-btn:focus + .menu-icon {
-    outline: 3px solid blue;
+    outline: 2px solid rgb(94, 158, 214);
 }
 
 .moreApps:focus + .menuMoreButton{
-    border: 1px solid blue;
+    border: 1px solid rgb(94, 158, 214);
 }
 
 .searchContainer {
